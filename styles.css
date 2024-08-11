@@ -95,7 +95,7 @@ body {
 }
 
 @supports (font-variation-settings: normal) {
-  :root {
+  body {
     font-family: InterVariable, sans-serif;
   }
 }
@@ -109,8 +109,13 @@ body.no-js {
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  /* justify-content: flex-end; */
   flex: 1 0 1;
+}
+
+.info {
+  display: none;
 }
 
 body.no-js .toggle-button {
@@ -170,9 +175,16 @@ main {
 @media screen and (min-width: 800px) {
   .about {
     padding: 1rem 0 0;
-    flex: 1;
+    /* flex: 1; */
+    display: inline-block;
   }
 }
+
+/* @media screen and (min-width: 800px) {
+  .info {
+    display: inline;
+  }
+} */
 
 .about,
 .links {
