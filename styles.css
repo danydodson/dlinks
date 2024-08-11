@@ -110,6 +110,7 @@ body.no-js {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* justify-content: flex-end; */
   flex: 1 0 1;
 }
@@ -192,7 +193,7 @@ main {
 }
 
 .about>* {
-  margin: 0 0 1rem;
+  /* margin: 0 0 1rem; */
   font-size: clamp(1rem, 1.5vw, 2.3rem);
 }
 
