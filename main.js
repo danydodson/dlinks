@@ -13,7 +13,7 @@ https://hankchizljaw.com/wrote/create-a-user-controlled-dark-or-light-mode/
 **/
 
 const modeToggleButton = document.querySelector('.js-mode-toggle');
-const modeToggleText = document.querySelector('.js-mode-toggle-text');
+// const modeToggleText = document.querySelector('.js-mode-toggle-text');
 // const modeStatusElement = document.querySelector('.js-mode-status');
 
 /**
@@ -43,10 +43,10 @@ const applySetting = passedSetting => {
 
   if (currentSetting) {
     document.documentElement.setAttribute('data-user-color-scheme', currentSetting);
-    setButtonLabel(currentSetting);
+    // setButtonLabel(currentSetting);
   }
   else {
-    setButtonLabel(getCSSCustomProp(COLOR_MODE_KEY));
+    // setButtonLabel(getCSSCustomProp(COLOR_MODE_KEY));
   }
 }
 
@@ -77,10 +77,10 @@ const toggleSetting = () => {
 /**
  * A shared method for setting the button text label and visually hidden status element 
  */
-const setButtonLabel = currentSetting => {
-  modeToggleText.innerText = `${currentSetting === 'dark' ? 'light' : 'dark'}`;
+// const setButtonLabel = currentSetting => {
+  // modeToggleText.innerText = `.${currentSetting === 'dark' ? 'light' : 'dark'}`;
   // modeStatusElement.innerText = `Color mode is now "${currentSetting}"`;
-}
+// }
 
 /**
  * Clicking the button runs the apply setting method which grabs its parameter
